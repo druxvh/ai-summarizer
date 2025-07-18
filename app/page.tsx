@@ -132,7 +132,7 @@ export default function Page() {
               value={input}
               onChange={handleInputChange}
               placeholder="Enter your study notes..."
-              className="h-[25vh] sm:h-full sm:max-h-[48vh] resize-none overflow-auto"
+              className="h-[24vh] sm:h-full sm:max-h-[48vh] resize-none overflow-auto"
             />
           </CardContent>
           <CardFooter>
