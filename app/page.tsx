@@ -97,14 +97,14 @@ export default function Page() {
 
       {/* Header */}
       <header className="bg-white border-b shadow-sm">
-        <div className="max-w-6xl mx-auto px-4 py-6">
+        <div className="max-w-6xl mx-auto px-4 py-4 sm-py-6">
           <div className="flex justify-center items-center gap-3 mb-2">
-            <div className="p-2 bg-blue-100 rounded-lg">
-              <Sparkles className="h-5 w-5 text-blue-600" />
+            <div className="p-2 bg-blue-100 rounded-sm sm:rounded-lg">
+              <Sparkles className="size-4 sm:size-5 text-blue-600" />
             </div>
-            <h1 className="text-2xl font-bold">AI Notes Summarizer</h1>
+            <h1 className="text-xl sm:text-2xl font-bold">AI Notes Summarizer</h1>
           </div>
-          <p className="text-gray-600 text-center">Summarize your study notes instantly using AI</p>
+          <p className="text-gray-600 text-sm sm:text-base text-center text-pretty">Summarize your study notes instantly using AI</p>
         </div>
       </header>
 
@@ -132,7 +132,7 @@ export default function Page() {
               value={input}
               onChange={handleInputChange}
               placeholder="Enter your study notes..."
-              className="h-[28vh] sm:h-full sm:max-h-[48vh] resize-none overflow-auto"
+              className="h-[25vh] sm:h-full sm:max-h-[48vh] resize-none overflow-auto"
             />
           </CardContent>
           <CardFooter>
@@ -233,7 +233,7 @@ export default function Page() {
           Clear
         </Button>
 
-        <p className="text-sm text-gray-500 max-w-md mx-auto">
+        <p className="text-sm text-gray-500 max-w-md mx-auto px-6">
           💡 <strong>Tip:</strong> This tool uses AI to convert dense notes into concise summaries. For best results,
           paste well-structured notes with clear headings and bullet points.
         </p>
